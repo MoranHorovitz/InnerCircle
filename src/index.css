@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Cursor glow (inspired by glow-capture tutorial) */
+.glow-capture {
+  --glow-color: rgba(91, 79, 228, 0.55);
+  --glow-size: 260px;
+  --glow-opacity: 0;
+  --glow-x: 50%;
+  --glow-y: 50%;
+  position: relative;
+  isolation: isolate;
+}
+
+.glow-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity);
+  transition: opacity 240ms ease;
+  background: radial-gradient(
+    circle var(--glow-size) at var(--glow-x) var(--glow-y),
+    var(--glow-color) 0%,
+    rgba(91, 79, 228, 0.12) 18%,
+    transparent 55%
+  );
+  mix-blend-mode: screen;
+}
+
+.glow-capture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06) inset;
+}
+
