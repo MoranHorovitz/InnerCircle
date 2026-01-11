@@ -331,7 +331,7 @@ export default function App() {
             <Reveal>
               <div className="overflow-hidden shadow-soft">
                 <img
-                  src="src/hero4.png"
+                  src="/hero4.png"
                   alt=""
                   className="w-full min-h-[512px] sm:h-[420px] mt-3 object-cover"
                 />
