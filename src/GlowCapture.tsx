@@ -43,12 +43,6 @@ export function GlowCapture({
     <div
       ref={ref}
       className={`glow-capture ${className}`}
-      style={{
-        // @ts-expect-error CSS custom props
-        "--glow-color": glowColor,
-        // @ts-expect-error CSS custom props
-        "--glow-size": `${glowSize}px`,
-      }}
     >
       <div className="glow-overlay rounded-[inherit]" />
       <div className="relative z-10">{children}</div>
