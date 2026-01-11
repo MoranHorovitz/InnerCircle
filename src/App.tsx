@@ -185,7 +185,7 @@ export default function App() {
       {
         icon: "📍",
         title: "8 מפגשים פיזיים",
-        desc: "3–3.5 שעות כל אחד בסלון ברמת גן, בקבוצה קטנה מאוד (6–8 נשים).",
+        desc: "3-3.5 שעות כל אחד בסלון ברמת גן, בקבוצה קטנה מאוד (6-8 נשים).",
       },
       {
         icon: "🕒",
@@ -194,13 +194,13 @@ export default function App() {
       },
       {
         icon: "⚡",
-        title: "3–4 מפגשי Execution",
+        title: "3-4 מפגשי Execution",
         desc: "מפגשים שבהם פשוט בונים: קוד / מוצר / תשתית / תוכן — כולן באותו חלל.",
       },
       {
         icon: "🧠",
         title: "מנטורים מהשורה הראשונה",
-        desc: "יושבים איתך בזמן אמת: שואלים, מפצחים ומקדמים — בלי הרצאות.",
+        desc: "יושבים איתך בזמן אמת: שואלים, מפצחים ומקדמים.",
       },
       {
         icon: "🤝",
@@ -280,10 +280,6 @@ export default function App() {
             <div className="mt-14 flex justify-center">
               <PrimaryCTA onClick={() => setOpen(true)} />
             </div>
-
-            {/* <div className="mt-10 text-sm text-slate-400">
-              גללי קצת למטה — הטקסט זז מהר יותר, והצל זז לאט יותר + מתפזר + גדל + דועך.
-            </div> */}
           </Reveal>
         </div>
       </section>
