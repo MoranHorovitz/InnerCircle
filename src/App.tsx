@@ -292,7 +292,7 @@ export default function App() {
               מה התהליך כולל?
             </div>
             <div className="mt-4 text-slate-500">
-              בפועל, את מקבלת מעטפת מלאה לעשייה
+              את מקבלת מעטפת מלאה לעשייה בפועל
             </div>
           </Reveal>
 
